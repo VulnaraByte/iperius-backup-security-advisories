@@ -196,7 +196,7 @@ aes256_key  = sha1_digest || sha1_digest[0:12]         -> 32 bytes
 | `abcdefgh` | `2ycesT3tnVMqWz82SV40O7l1xEWpHSpn` | Decrypted correctly |
 | `aaaaaaaaaaaaaaaa` | `NbZ3QjLU4HopP5zsrTfWoknppTnNm0QL6qd8OyQeR5S44QyYq7n2GA==` | Decrypted correctly |
 
-![Figure 6: Successful decryption of test vectors](images/step4_decryption_validation.png)
+![Figure 7: Successful decryption of test vectors](images/step4_decryption_validation.png)
 
 ### Step 5: Proof of Concept — Offline Decryption Script
 
@@ -209,7 +209,7 @@ $ python3 decrypt_iperius.py 'tj1G8QXCPZM+FdRHSeA9SFNeupWnrTAC'
 Decrypted: p@ssw0rd
 ```
 
-![Figure 7: Running the offline decryption script](images/step5_poc_terminal.png)
+![Figure 8: Running the offline decryption script](images/step5_poc_terminal.png)
 
 ### Step 6 (Alternative): Decryption Oracle via API Interception
 
@@ -225,11 +225,11 @@ bu mpr!WNetAddConnection2W ".printf \"\\n>>> CAPTURED CREDENTIALS <<<\\nShare Pa
 
 4. The attacker triggers the connection by clicking **"Test Connection"** on a backup job referencing this account.
 
-![Figure 8: Configuring SMB account with copied encrypted credential](images/step6_oracle_profile.png)
+![Figure 9: Configuring SMB account with copied encrypted credential](images/step6_oracle_profile.png)
 
-![Figure 9: Triggering backup job to force decryption](images/step6_oracle_trigger.png)
+![Figure 10: Triggering backup job to force decryption](images/step6_oracle_trigger.png)
 
-![Figure 10: WinDbg intercepting plaintext password at WNetAddConnection2W](images/step6_oracle_windbg.png)
+![Figure 11: WinDbg intercepting plaintext password at WNetAddConnection2W](images/step6_oracle_windbg.png)
 
 ---
 
