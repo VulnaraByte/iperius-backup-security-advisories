@@ -56,7 +56,7 @@ Static analysis of the `IperiusSvc.exe` binary was performed to understand the i
 
 #### 2.1 Job File Discovery (`GetAllJobFiles`)
 
-At address `0084F9C0`, the service uses a hardcoded file mask `Job???` to scan the Jobs directory. This means the service will automatically discover and load any file matching the pattern `Job*.ibj`, regardless of who created it. No ownership verification, digital signature check, or integrity validation is performed on the files.
+At address `0084F9C0`, the service uses a hardcoded file mask `Job???` to scan the Jobs directory. This means the service will automatically discover and load any file whose name matches `Job` followed by exactly three characters (e.g., `Job321.ibj`), regardless of who created it. No ownership verification, digital signature check, or integrity validation is performed on the files.
 
 ![Figure 2: Disassembly showing the hardcoded Job??? file search mask](images/step2_getallfiles.png)
 

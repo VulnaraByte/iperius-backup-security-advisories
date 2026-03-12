@@ -63,10 +63,13 @@ Look for `Password=` fields in each account section.
 
 C program that automates the full privilege escalation chain: reads MachineGuid, derives the AES-128 key, encrypts a payload command, and generates a malicious `.ibj` job file.
 
-### Requirements
+### Build Requirements
 
-- Windows with a C compiler (MSVC, MinGW, or cl.exe)
-- Iperius Backup installed (target system)
+- Windows with a C compiler (MSVC or MinGW)
+
+### Target Requirements
+
+- Iperius Backup installed and running as a service
 - Low-privileged user account (no admin required)
 
 ### Compilation
