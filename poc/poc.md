@@ -85,7 +85,7 @@ gcc iperius_job_inject.c -o iperius_job_inject.exe -lbcrypt -lcrypt32 -ladvapi32
 
 ### Usage
 
-1. Compile the PoC on the target system (or cross-compile)
+1. Compile the PoC and transfer the binary to the target system
 2. Run as any local user:
 
 ```cmd
