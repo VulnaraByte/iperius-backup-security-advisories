@@ -50,7 +50,7 @@ Both findings demonstrate critical cryptographic weaknesses in the application's
 | 2026-02-21 | Iperius v8.7.4 released with partial fixes (DPAPI for credentials, folder hardening option) |
 | 2026-02-28 | Verification testing completed |
 | TBD | CVE assignment |
-| TBD | Public disclosure (90-day deadline from initial report) |
+| 2026-03-12 | Public disclosure (coordinated with vendor, ahead of 90-day deadline) |
 
 ---
 

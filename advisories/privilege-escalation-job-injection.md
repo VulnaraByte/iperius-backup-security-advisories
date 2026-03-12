@@ -6,7 +6,7 @@
 |-------|---------|
 | **Finding ID** | Privilege Escalation via Encrypted Job File Injection |
 | **Severity** | High |
-| **CVSS v3.1** | 8.8 |
+| **CVSS v3.1** | 8.8 (`AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H`) |
 | **Affected Version** | Iperius Backup v8.7.2 |
 | **Attack Vector** | Local |
 | **Privileges Required** | Low (any authenticated local user) |
